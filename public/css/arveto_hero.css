@@ -1,0 +1,238 @@
+/* Replacement colors */
+
+
+:root{
+    --arveto-green: #85a727;
+}
+
+.arveto-green{
+    color: var(--arveto-green) !important;
+    text-decoration: none !important;
+}
+
+.arveto-green-hover:hover{
+    color: var(--arveto-green) !important;
+}
+
+
+.arveto-green-bg{
+    background-color: var(--arveto-green) !important;
+    color: white;
+}
+
+.arveto-transparent-bg{
+    background: rgba(0, 0, 0, 0) !important;
+    color: white;
+}
+
+
+.arveto-green-active{
+    border-bottom-color: #85a727 !important;
+    color: white;
+}
+
+a{
+    color: var(--arveto-green);;
+}
+
+
+
+/*Hero*/
+
+#hero{
+    background-image: url(../images/hero_background.jpg);
+    background-size: cover;
+}
+
+#header{
+    z-index: 3;
+    padding: 5px;
+}
+
+#cnje_white{
+    width: 100px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.clickable:hover{
+    cursor: pointer;
+}
+
+.hero-link{
+    text-decoration: underline;
+}
+
+.hero-link:hover{
+    color: var(--arveto-green) !important;
+}
+
+
+.animated {
+    animation: shake 8s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+  1%, 9% {
+    transform: translate3d(0, -1px, 0);
+  }
+
+  2%, 8% {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  3%, 5%, 7% {
+      transform: translate3d(0, -3px, 0);
+  }
+
+  4%, 6% {
+    transform: translate3d(0, 2px, 0);
+  }
+}
+
+
+/*Header*/
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.content {
+    margin-top: 86px;
+}
+
+
+    /*Content*/
+
+/* Fonctionnement */
+#fonctionnement-title, #competences-title, #equipe-title{
+    font-size: : 36px;
+    padding-top: 40px;
+    margin: 0 !important;
+}
+
+#icon1{
+    color: #f4cd55;
+}
+
+#icon2{
+    color: #666666;
+}
+
+#icon3{
+    color: #3b8e1b;
+}
+
+.stage-card{
+    min-height: 525px;
+}
+
+.paragraph{
+    padding-top: 15px;
+}
+
+#fonctionnement-title{
+    margin-top: 57px;
+}
+
+
+/*CNJE*/
+
+#cnje-logo{
+    height: 350px;
+}
+
+
+/* Skills */
+
+#skill-text{
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+.skill-description{
+    min-height: 109px;
+}
+
+.skill-image{
+    max-width: 220px;
+    max-height: 270px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+/* Team */
+
+.portrait-container{
+    margin-top: 0px;
+}
+
+.portrait{
+    border-radius: 50%;
+
+    width: auto;
+    height: auto;
+
+    max-width: 170px;
+    max-height: 170px;
+}
+
+.cards{
+    padding: 40px;
+}
+
+#team-intro{
+    padding-bottom: 0px;
+}
+
+#team-sandbox{
+    padding-top: 40px;
+}
+
+#equipe-title{
+    margin-top: 60px;
+}
+
+
+    /* Footer */
+
+#footer{
+    color: white;
+    background: #343434;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    padding-bottom: 35px;
+    padding-top: 50px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+
+#links{
+    color: white;
+}
+
+.footer-title{
+    color: white;
+}
+
+.footer-icon{
+    margin: 15px;
+    color: white;
+}
+
+#legal{
+    margin-top: 50px;
+}
