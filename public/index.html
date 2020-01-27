@@ -7,756 +7,733 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<title> Arveto Ink. :: Home</title>
-<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+	<title> Arveto Ink. :: Home</title>
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
-<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
-<!--Core CSS -->
-<link rel="stylesheet" href="assets/css/app.css">
-<link rel="stylesheet" href="assets/css/bulma.css">
-<link rel="stylesheet" href="assets/css/core.css">
+	<!--Core CSS -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/bulma.css">
+	<link rel="stylesheet" href="assets/css/core.css">
 
 </head>
 
 <body>
-<!-- Pageloader -->
-<div class="pageloader is-theme"></div>
-<div class="infraloader is-active"></div>
-<div class="dark-wrapper">
-  <!-- Landing page Hero -->
-  <section class="hero is-fullheight is-transparent">
-    <div class="hero-head">
+	<!-- Pageloader -->
+	<div class="pageloader is-theme"></div>
+	<div class="infraloader is-active"></div>
+	<div class="dark-wrapper">
+		<!-- Landing page Hero -->
+		<section class="hero is-fullheight is-transparent">
+			<div class="hero-head">
 
-      <!-- Cloned navbar -->
-      <!-- Cloned navbar that comes in on scroll -->
-      <nav id="navbar-clone" class="navbar is-fixed is-dark">
-        <div class="container">
-          <!-- Brand -->
-            <div class="navbar-brand">
-                <a href="index.html" class="navbar-item">
-                    <img class="rotating" src="assets/img/logo/krypton-gradient.svg" alt="">
-                    <span class="brand-name">Arveto</span>
-                </a>
-                <!-- Responsive toggle -->
-                <span class="navbar-burger burger" data-target="cloneNavbarMenu">
-                        <span></span>
-                <span></span>
-                <span></span>
-                </span>
-            </div>
-          <!-- Menu -->
-          <div id="cloneNavbarMenu" class="navbar-menu">
-            <div class="navbar-end">
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('competencies').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})">Compétences</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('whoami').scrollIntoView()">A propos</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('sample').scrollIntoView()">Démo</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('team').scrollIntoView()">L'équipe</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('blog').scrollIntoView()">Blog</a>
-              </div>
-              <!-- Sign up -->
-              <div class="navbar-item is-nav-link">
-                <a onclick="document.getElementById('contact').scrollIntoView()" class="button k-button k-primary raised has-gradient slanted">
-                  <span class="text">Contact</span>
-                  <span class="front-gradient"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- /Cloned navbar -->
-      <!-- Static navbar -->
-      <!-- Static navbar -->
-      <nav class="navbar is-light">
-        <div class="container">
-          <!-- Brand -->
-          <div class="navbar-brand">
-            <a href="index.html" class="navbar-item">
-              <img class="rotating" src="assets/img/logo/krypton.svg" alt="">
-              <span class="brand-name">ARVETO INK.</span>
-            </a>
-            <!-- Responsive toggle -->
-            <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span>
-            <span></span>
-            <span></span>
-            </span>
-          </div>
-          <!-- Menu -->
-          <div id="navbarMenu" class="navbar-menu light-menu">
-            <div class="navbar-end">
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('competencies').scrollIntoView()">Compétences</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('whoami').scrollIntoView()">A propos</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('sample').scrollIntoView()">Démo</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('team').scrollIntoView()">L'équipe</a>
-              </div>
-              <!-- Menu item -->
-              <div class="navbar-item is-nav-link">
-                <a class="is-centered-responsive" onclick="document.getElementById('blog').scrollIntoView()">Blog</a>
-              </div>
-              <!-- Sign up -->
-              <div class="navbar-item is-nav-link">
-                <a onclick="document.getElementById('contact').scrollIntoView()" class="button k-button k-primary raised has-gradient slanted">
-                  <span class="text">Contact</span>
-                  <span class="front-gradient"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- /Static navbar -->
-    </div>
-
-    <!-- Animated particles -->
-    <div style="z-index: 10;" id="particles-js"></div>
-
-    <!-- Hero Image and Title -->
-    <div class="hero-body" id="home">
-      <div class="container">
-        <div class="columns is-vcentered">
-
-          <!-- Landing page Title -->
-          <div class="column is-5 landing-caption">
-              <h1 class="title is-1 is-light is-semibold is-spaced main-title">Arveto Ink. , <br> <small>Junior Création</small> <br><br> <small>ISTY, UVSQ</small></h1>
-              <h2 class="subtitle is-6 is-light is-thin">
-                  A window on tomorrow's world.
-              </h2>
-              <!-- CTA -->
-              <p>
-                <a style="z-index: 20" href="#start" class="button k-button k-primary raised has-gradient is-fat is-bold">
-                      <span class="text">Nous contacter</span>
-                      <span class="front-gradient"></span>
-                  </a>
-              </p>
-
-          </div>
-          <!-- Hero image -->
-          <div class="column is-7">
-              <figure class="image">
-                  <img src="assets/img/illustrations/blockchain-blocks.svg" style="height:80vh;" alt="">
-              </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hero footer -->
-    <div class="hero-foot">
-      <div class="container">
-        <div class="has-text-centered level-item"><div class="subtitle is-dark">Ils nous ont fait confiance :</div></div>
-        <div class="tabs is-centered">
-          <!-- Client / partner list -->
-          <ul>
-            <li><a><img class="hero-logo" src="https://hal.uvsq.fr/public/logo.png" alt="UVSQ Interasso"></a></li>
-            <li><a><img class="hero-logo" id="dreamiiz" src="https://www.dreamiiz.com/wp-content/themes/dreamiiz/images/logo.png" alt="Dreamizz"></a></li>
-            <li><a><img class="hero-logo" id="stratton" src="https://strattontechnologies.fr/images/stratton.png" alt="Stratton Technologies"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <style media="screen">
-    #dreamiiz {
-      -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
-      -moz-transform: scale(0.5); /* FF3.5+ */
-      -ms-transform: scale(0.5); /* IE9 */
-      -o-transform: scale(0.5); /* Opera 10.5+ */
-      transform: scale(0.5);
-    }
-    #stratton,.hero-logo{
-      filter: brightness(50%);
-    }
-    .hero-logo{
-      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(50%);
-    }
-    body{
-    }
-
-  </style>
-  <!-- /Landing page Hero -->
-
-  <!-- Icon Features section -->
-  <section id="start" class="section is-transparent is-relative">
-    <!-- Container -->
-    <br><br><br>
-    <div class="container">
-
-      <div class="has-text-centered">
-        <div class="buy-title"><h2 class="subtitle has-text-white">Nos <strong class="is-bold has-text-white">devis</strong> sont <strong class="is-bold has-text-white">gratuits</strong> <br> Présentez nous votre projet</h2></div>
-
-        <a href="mailto:arveto.softwares@gmail.com" class="button k-button k-secondary raised has-gradient is-fat is-bold rounded">
-          <span class="text">Nous contacter</span>
-          <span class="front-gradient"></span>
-        </a>
-
-        <!-- <div class="accepted-currencies">
-          <div>
-            <i class="cf cf-btc"></i>
-          </div>
-          <div>
-            <i class="cf cf-eth"></i>
-          </div>
-          <div>
-            <i class="cf cf-ltc"></i>
-          </div>
-          <div>
-            <i class="cf cf-xem"></i>
-          </div>
-        </div> -->
-        <br><br><br>
-      </div>
-
-      <!-- Content wrapper -->
-      <br><br><br><br>
-      <div class="content-wrapper is-medium" id="competencies">
-
-      <!-- Title & subtitle -->
-        <div class="divider is-centered"></div>
-
-        <h2 class="title is-light is-semibold has-text-centered is-spaced">Nos compétences</h2>
-        <div class="columns is-vcentered">
-          <!-- Feature -->
-          <div class="column is-4">
-            <div class="feature">
-              <img src="assets/img/illustrations/world.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
-              <h4 class="title is-6 is-tight is-light">Site Web</h4>
-              <p>Applications web utilisant les dernières technologies</p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-4">
-            <div class="feature">
-              <img src="assets/img/illustrations/media.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
-              <h4 class="title is-6 is-tight is-light">Application de bureau</h4>
-              <p>Solutions logicielles pour Windows, Mac, Linux</p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-4">
-            <div class="feature">
-              <img src="assets/img/illustrations/krypton-app.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
-              <h4 class="title is-6 is-tight is-light">Applications mobiles <br> ANDROID // iOS</h4>
-              <p>Personne n'est oublié</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Play video button -->
-        <!-- <div class="cta-wrapper has-text-centered">
-          <div class="video-button levitate js-modal-btn" data-video-id="6WG7D47tGb0">
-            <img src="assets/img/icons/play.svg" alt="">
-          </div>
-        </div> -->
-      </div>
-      <!-- Content wrapper -->
-    </div>
-    <!-- /Container -->
-  </section>
-  <!-- /Icon Features section -->
-
-  <!-- Side Features section -->
-  <section id="big-gradient" class="section is-transparent">
-    <!-- Container -->
-    <div class="container" id="whoami">
-      <!-- Divider -->
-      <div class="divider is-centered"></div>
-      <!-- Title & subtitle -->
-				<h2 class="title is-light is-semibold has-text-centered is-spaced">Qui sommes nous ?</h2>
-				<h4 class="subtitle is-6 has-text-centered is-compact is-light">La Junior Création de l'ISTY, l'école d'ingénieurs de l'Université de Versailles Saint-Quentin-en-Yvelines, a été reformée en 2019 par un groupe d'étudiants motivés et compétents. Elle est spécialisée dans la réalisation de solutions logicielles pour les entreprises. </h4>
-
-				<!-- Content wrapper -->
-				<div class="content-wrapper is-large">
-					<div class="columns is-vcentered">
-
-						<!-- Feature content -->
-						<div class="column is-5 is-offset-1">
-							<div class="side-feature-content">
-
-								<h3 class="title is-4 is-light"><img src="assets/img/icons/ico/bitbanner.svg" alt=""> <span>Nous faisons partie du mouvement des Junior Entreprises</span></h3>
-								<div class="divider is-long"></div>
-								<p class="is-light">La CNJE est l'organisme encadrant l'ensemble des Juniors Créations, Junior Initiatives et Junior Entreprises. Ces associaions implantées directement au sein des grandes écoles permettent aux étudiants de mettre en pratique leurs savoirs en réalisant des études pour tout types de clients (grands groupes, PME, TPE, etc...). Obtenir ce label exige de se soumettre à des contrôles rigoureux, et représente donc un véritable gage de qualité.
-Pour en apprendre plus sur la CNJE, vous pouvez vous rendre sur son site officiel.</p>
-								<div class="cta-wrapper">
-									<a href="https://junior-entreprises.com/concept/" class="button k-button k-primary raised has-gradient is-bold">
-										<span class="text">En savoir plus</span>
-										<span class="front-gradient"></span>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Feature image -->
-						<div class="column is-7">
-							<img class="side-feature" src="assets/img/illustrations/blockchain-blocks.svg" alt="">
-						</div>
-					</div>
-
-				</div>
-				<!-- /Content wrapper -->
-			</div>
-			<!-- /Container -->
-		</section>
-		<!-- /Side Features section -->
-
-		<!-- ICO section -->
-		<section class="section is-medium is-end" id="workflow">
-			<!-- Container -->
-			<div class="container">
-				<!-- Divider -->
-				<div class="divider is-centered"></div>
-				<!-- Title & subtitle -->
-				<h2 class="title is-light is-semibold has-text-centered is-spaced">Déroulement d'une étude</h2>
-
-				<!-- Content wrapper -->
-				<div class="content-wrapper is-large">
-
-					<!-- Flying tabs wrapper -->
-					<div class="flying-wrapper">
-						<!-- Tabs container -->
-						<div class="flying-tabs-container">
-							<!-- Tabs -->
-							<div class="flying-tabs">
-								<div class="flying-child tab-1 is-active" data-tab="tab-1"><a href="javascript:void(0);">1. DEVIS</a></div>
-								<div class="flying-child tab-2" data-tab="tab-2"><a href="javascript:void(0);">2. LANCEMENT DE L'ETUDE</a></div>
-								<div class="flying-child tab-3" data-tab="tab-3"><a href="javascript:void(0);">3. RENDU DU PROJET</a></div>
-								<div class="flying-child tab-4" data-tab="tab-4"><a href="javascript:void(0);">4. MAINTENANCE</a></div>
-								<div class="slider"></div>
-							</div>
-						</div>
-
-						<!-- Tabs content wrapper -->
-						<div class="flying-tabs-content">
-							<!-- Tab 1 -->
-							<div id="tab-1" class="tab-content is-active">
-								<div class="columns is-vcentered tab-content-wrapper">
-									<!-- ICO Terms -->
-									<div class="column is-5 is-offset-1">
-										<div class="text-content">
-											<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">ELABORATION D'UN DEVIS</h4>
-											<span class="subtitle is-light">Nous appréhendons vos problématiques et vous exposons nos solutions, le budget prévisionnel et le temps nécessaire à la réalisation de votre projet.</span>
-										</div>
-									</div>
-									<div class="column is-5">
-										<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/roadmap-end.svg" alt="">
-									</div>
-									<!-- ICO COuntdown -->
-									<!-- <div class="column is-5">
-										<div class="ico-card animated preFadeInUp fadeInUp">
-											<ul id="countdown" class="is-ico">
-												<li id="days">
-													<div class="timer-number">00</div>
-													<div class="label">Days</div>
-												</li>
-												<li id="hours">
-													<div class="timer-number">00</div>
-													<div class="label">Hours</div>
-												</li>
-												<li id="minutes">
-													<div class="timer-number">00</div>
-													<div class="label">Minutes</div>
-												</li>
-												<li id="seconds">
-													<div class="timer-number">00</div>
-													<div class="label">Seconds</div>
-												</li>
-											</ul>
-											<div class="progress-block">
-												<div class="progress-tags">
-													<div>Presale</div>
-													<div>Soft Cap</div>
-													<div>Bonus</div>
-												</div>
-												<progress class="progress ico-progress" value="65" max="100">65%</progress>
-											</div>
-
-											<div class="button-block">
-												<a href="#" class="button k-button k-secondary raised has-gradient is-bold is-fullwidth rounded">
-													<span class="text">Join the ICO Now</span>
-													<span class="front-gradient"></span>
-												</a>
-											</div>
-
-											<div class="icon-block">
-												<i class="cf cf-btc"></i>
-												<i class="cf cf-eth"></i>
-												<i class="cf cf-ltc"></i>
-											</div>
-										</div>
-									</div> -->
-								</div>
-							</div>
-							<!-- /Tab 1 -->
-
-							<!-- Tab 2 -->
-							<div id="tab-2" class="tab-content">
-								<div class="columns is-vcentered tab-content-wrapper">
-									<!-- Tab content -->
-									<div class="column is-5 is-offset-1">
-										<div class="text-content">
-											<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">PHASE DE DÉVELOPPEMENT</h4>
-											<span class="is-light subtitle">Nous commençons alors l'étude approfondie des solutions que nous proposons et le développement technique du projet afin de répondre le mieux possible à vos attentes.</span>
-										</div>
-									</div>
-									<!-- Tab image -->
-									<div class="column is-5">
-										<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/crypto-mining.svg" alt="">
-									</div>
-								</div>
-							</div>
-							<!-- /Tab 2 -->
-
-							<!-- Tab 3 -->
-							<div id="tab-3" class="tab-content">
-								<div class="columns is-vcentered tab-content-wrapper">
-									<!-- Tab content -->
-									<div class="column is-5 is-offset-1">
-										<div class="text-content">
-											<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">RENDU DU PROJET</h4>
-											<span class="subtitle is-light">Nous rendons le projet terminé dans les délais et les conditions prévus dès le devis et nous assurons son installation ainsi que le suivi de son fonctionnement.</span>
-										</div>
-									</div>
-									<!-- Tab image -->
-									<div class="column is-5">
-										<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/bounty.svg" alt="">
-									</div>
-								</div>
-							</div>
-							<!-- /Tab 3 -->
-
-							<!-- Tab 4 -->
-							<div id="tab-4" class="tab-content">
-								<div class="columns is-vcentered tab-content-wrapper">
-									<!-- Tab content -->
-									<div class="column is-5 is-offset-1">
-										<div class="text-content">
-											<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">MAINTENANCE ET SUIVI</h4>
-											<span class="subtitle is-light">Une fois le projet remis, nous assurons une maintenance de nos produits livrés.</span>
-										</div>
-									</div>
-									<!-- Tab image -->
-									<div class="column is-5">
-										<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/media.svg" alt="">
-									</div>
-								</div>
-							</div>
-							<!-- /Tab 4 -->
-						</div>
-					</div>
-
-				</div>
-				<!-- Content wrapper -->
-			</div>
-			<!-- /Container -->
-		</section>
-		<!-- /ICO section -->
-
-		<!-- Roadmap section -->
-		<section class="section is-medium is-dark" id="sample">
-			<!-- Container -->
-			<div class="container">
-				<!-- Content wrapper -->
-				<div class="content-wrapper">
-
+				<!-- Cloned navbar -->
+				<!-- Cloned navbar that comes in on scroll -->
+				<nav id="navbar-clone" class="navbar is-fixed is-dark">
 					<div class="container">
-				<!-- Divider -->
-				<div class="divider is-centered"></div>
-				<!-- Title & subtitle -->
-				<h2 class="title is-light is-semibold has-text-centered is-spaced">Un exemple de nos compétences</h2>
-				<!-- Content wrapper -->
-				<div class="content-wrapper is-large">
-					<div class="columns is-vcentered">
+						<!-- Brand -->
+						<div class="navbar-brand">
+							<a href="" class="navbar-item">
+								<img class="rotating" src="assets/img/logo/krypton-gradient.svg" alt="">
+								<span class="brand-name">Arveto</span>
+							</a>
+							<!-- Responsive toggle -->
+							<span class="navbar-burger burger" data-target="cloneNavbarMenu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</div>
+						<!-- Menu -->
+						<div id="cloneNavbarMenu" class="navbar-menu">
+							<div class="navbar-end">
 
-						<!-- Feature content -->
-						<div class="column is-5 is-offset-1">
-							<div class="side-feature-content">
+								<!-- Skills -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('skills').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})">Compétences</a>
+								</div>
 
-								<h3 class="title is-4 is-light"><img src="assets/img/icons/ico/bitbanner.svg" alt=""> <span>Application démo</span></h3>
-								<div class="divider is-long"></div>
-								<p class="is-light">Nous réalisons des applications hybrides ou natives suivant les attentes du projet.</p>
-								<div class="cta-wrapper">
-									<a href="mailto:www.arveto.softwares@gmail.com" class="button k-button k-primary raised has-gradient is-bold">
-										<span class="text">Nous contacter</span>
+								<!-- About -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('whoami').scrollIntoView()">A propos</a>
+								</div>
+
+								<!-- Sample -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('sample').scrollIntoView()">Démo</a>
+								</div>
+
+								<!-- Team -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('team').scrollIntoView()">L'équipe</a>
+								</div>
+
+								<!-- Blog -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('blog').scrollIntoView()">Blog</a>
+								</div>
+
+								<!-- Language -->
+								<!-- <div class="navbar-item is-nav-link">
+									<div class = "dropdown">
+										<div class = "dropdown-trigger">
+											<button class = "button" aria-haspopup = "true" aria-controls = "dropdown-menu">
+												<span>FRA</span>
+												<span class = "icon is-small">
+													<i class = "fa fa-angle-down" aria-hidden="true"></i>
+												</span>
+											</button>
+										</div>
+										<div class = "dropdown-menu" id = "dropdown-menu" role = "menu">
+											<div class = "dropdown-content">
+												<div class = "dropdown-item">English</div>
+												<div class = "dropdown-item is-active">Français</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+
+								<!-- Contact -->
+								<div class="navbar-item is-nav-link">
+									<a onclick="document.getElementById('contact').scrollIntoView()" class="button k-button k-primary raised has-gradient slanted">
+										<span class="text">Contact</span>
 										<span class="front-gradient"></span>
 									</a>
 								</div>
 							</div>
 						</div>
+					</div>
+				</nav>
 
-						<!-- Feature image -->
+				<!-- /Cloned navbar -->
+				<nav class="navbar is-light">
+					<div class="container">
+
+						<!-- Brand -->
+						<div class="navbar-brand">
+							<a href="index.html" class="navbar-item">
+								<img class="rotating" src="assets/img/logo/krypton.svg" alt="">
+								<span class="brand-name">ARVETO INK.</span>
+							</a>
+
+							<!-- Responsive toggle -->
+							<span class="navbar-burger burger" data-target="navbarMenu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</div>
+
+						<!-- Menu -->
+						<div id="navbarMenu" class="navbar-menu light-menu">
+							<div class="navbar-end">
+								<!-- Skills -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('skills').scrollIntoView()">Compétences</a>
+								</div>
+								<!-- About -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('whoami').scrollIntoView()">A propos</a>
+								</div>
+								<!-- Sample -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('sample').scrollIntoView()">Démo</a>
+								</div>
+								<!-- Team -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('team').scrollIntoView()">L'équipe</a>
+								</div>
+								<!-- Blog -->
+								<div class="navbar-item is-nav-link">
+									<a class="is-centered-responsive" onclick="document.getElementById('blog').scrollIntoView()">Blog</a>
+								</div>
+								<!-- Contact -->
+								<div class="navbar-item is-nav-link">
+									<a onclick="document.getElementById('contact').scrollIntoView()" class="button k-button k-primary raised has-gradient slanted">
+										<span class="text">Contact</span>
+										<span class="front-gradient"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+
+			<!-- Animated particles -->
+			<div style="z-index: 10;" id="particles-js"></div>
+
+
+			<!-- Hero Image and Title -->
+			<div class="hero-body" id="home">
+				<div class="container">
+					<div class="columns is-vcentered">
+
+						<!-- Landing page Title -->
+						<div class="column is-5 landing-caption">
+							<h1 class="title is-1 is-light is-semibold is-spaced main-title">Arveto Ink. , <br> <small>Junior Création</small> <br><br> <small>ISTY, UVSQ</small></h1>
+							<h2 class="subtitle is-6 is-light is-thin">
+								A window on tomorrow's world.
+							</h2>
+
+							<p>
+								<a style="z-index: 20" href="#start" class="button k-button k-primary raised has-gradient is-fat is-bold">
+									<span class="text">Nous contacter</span>
+									<span class="front-gradient"></span>
+								</a>
+							</p>
+
+						</div>
+						<!-- Hero image -->
 						<div class="column is-7">
-							<img class="side-feature" src="assets/img/illustrations/blockchain-blocks.svg" alt="">
+							<figure class="image">
+								<img src="assets/img/illustrations/blockchain-blocks.svg" style="height:80vh;" alt="">
+							</figure>
 						</div>
 					</div>
 				</div>
-				<!-- /Content wrapper -->
 			</div>
 
+			<!-- Hero footer -->
+			<div class="hero-foot">
+				<div class="container">
+					<div class="has-text-centered level-item"><div class="subtitle is-dark">Ils nous ont fait confiance :</div></div>
+					<div class="tabs is-centered">
+						<!-- Client / partner list -->
+						<ul>
+							<li><a><img class="hero-logo" src="https://hal.uvsq.fr/public/logo.png" alt="UVSQ Interasso"></a></li>
+							<li><a><img class="hero-logo" id="dreamiiz" src="https://www.dreamiiz.com/wp-content/themes/dreamiiz/images/logo.png" alt="Dreamizz"></a></li>
+							<li><a><img class="hero-logo" id="stratton" src="https://strattontechnologies.fr/images/stratton.png" alt="Stratton Technologies"></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<!-- /Container -->
 		</section>
-		<!-- /Roadmap section -->
 
+		<style media="screen">
+		#dreamiiz {
+			-webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+			-moz-transform: scale(0.5); /* FF3.5+ */
+			-ms-transform: scale(0.5); /* IE9 */
+			-o-transform: scale(0.5); /* Opera 10.5+ */
+			transform: scale(0.5);
+		}
 
+		#stratton,.hero-logo{
+			filter: brightness(50%);
+		}
 
-		<!-- Company section -->
-		<section class="section is-medium has-big-dark-gradient" id="team">
+		.hero-logo{
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(50%);
+		}
+
+		#cnje {
+			-webkit-transform: scale(0.6); /* Saf3.1+, Chrome */
+			-moz-transform: scale(0.6); /* FF3.5+ */
+			-ms-transform: scale(0.6); /* IE9 */
+			-o-transform: scale(0.6); /* Opera 10.5+ */
+			transform: scale(0.6);
+		}
+
+		</style>
+		<!-- /Landing page Hero -->
+
+		<!-- Icon Features section -->
+		<section id="start" class="section is-transparent is-relative">
 			<!-- Container -->
+			<br><br><br>
 			<div class="container">
 
-					<!-- Spaced divider -->
-					<div class="divider is-centered is-spacer"></div>
-					<!-- Title & subtitle -->
-					<h2 class="title is-light is-semibold has-text-centered is-spaced">Notre équipe</h2>
-					<h4 class="subtitle is-6 is-light has-text-centered is-compact">Récompensée par Altran et Smile lors du dernier hackathon de la Nuit de l'Info, l'équipe d'Arveto Ink. est composée d'étudiants de l'ISTY. Voici les membres de son bureau :</h4>
+				<div class="has-text-centered">
+					<div class="buy-title"><h2 class="subtitle has-text-white">Nos <strong class="is-bold has-text-white">devis</strong> sont <strong class="is-bold has-text-white">gratuits</strong> <br> Présentez nous votre projet</h2></div>
 
+					<a href="mailto:arveto.softwares@gmail.com" class="button k-button k-secondary raised has-gradient is-fat is-bold rounded">
+						<span class="text">Nous contacter</span>
+						<span class="front-gradient"></span>
+					</a>
+					<br><br><br>
+				</div>
+
+<!-- Content wrapper -->
+<br><br><br><br>
+<div class="content-wrapper is-medium" id="skills">
+
+	<!-- Title & subtitle -->
+	<div class="divider is-centered"></div>
+
+	<h2 class="title is-light is-semibold has-text-centered is-spaced">Nos compétences</h2>
+	<div class="columns is-vcentered">
+		<!-- Feature -->
+		<div class="column is-4">
+			<div class="feature">
+				<img src="assets/img/illustrations/world.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
+				<h4 class="title is-6 is-tight is-light">Site Web</h4>
+				<p>Applications web utilisant les dernières technologies</p>
+			</div>
+		</div>
+		<!-- Feature -->
+		<div class="column is-4">
+			<div class="feature">
+				<img src="assets/img/illustrations/media.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
+				<h4 class="title is-6 is-tight is-light">Application de bureau</h4>
+				<p>Solutions logicielles pour Windows, Mac, Linux</p>
+			</div>
+		</div>
+		<!-- Feature -->
+		<div class="column is-4">
+			<div class="feature">
+				<img src="assets/img/illustrations/krypton-app.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
+				<h4 class="title is-6 is-tight is-light">Applications mobiles <br> ANDROID // iOS</h4>
+				<p>Personne n'est oublié</p>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+<!-- Content wrapper -->
+</div>
+<!-- /Container -->
+</section>
+<!-- /Icon Features section -->
+
+<!-- Side Features section -->
+<section id="big-gradient" class="section is-transparent">
+	<!-- Container -->
+	<div class="container" id="whoami">
+		<!-- Divider -->
+		<div class="divider is-centered"></div>
+		<!-- Title & subtitle -->
+		<h2 class="title is-light is-semibold has-text-centered is-spaced">Qui sommes nous ?</h2>
+		<h4 class="subtitle is-6 has-text-centered is-compact is-light">La Junior Création de l'ISTY, l'école d'ingénieurs de l'Université de Versailles Saint-Quentin-en-Yvelines, a été reformée en 2019 par un groupe d'étudiants motivés et compétents. Elle est spécialisée dans la réalisation de solutions logicielles pour les entreprises. </h4>
+
+		<!-- Content wrapper -->
+		<div class="content-wrapper is-large">
+			<div class="columns is-vcentered">
+
+				<!-- Feature content -->
+				<div class="column is-5 is-offset-1">
+					<div class="side-feature-content">
+
+						<h3 class="title is-4 is-light"><img src="assets/img/icons/ico/bitbanner.svg" alt=""> <span>Nous faisons partie du mouvement des Junior Entreprises</span></h3>
+						<div class="divider is-long"></div>
+						<p class="is-light">La CNJE est l'organisme encadrant l'ensemble des Juniors Créations, Junior Initiatives et Junior Entreprises. Ces associaions implantées directement au sein des grandes écoles permettent aux étudiants de mettre en pratique leurs savoirs en réalisant des études pour tout types de clients (grands groupes, PME, TPE, etc...). Obtenir ce label exige de se soumettre à des contrôles rigoureux, et représente donc un véritable gage de qualité.
+							Pour en apprendre plus sur la CNJE, vous pouvez vous rendre sur son site officiel.</p>
+							<div class="cta-wrapper">
+								<a href="https://junior-entreprises.com/concept/" class="button k-button k-primary raised has-gradient is-bold">
+									<span class="text">En savoir plus</span>
+									<span class="front-gradient"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature image -->
+					<div class="column is-7">
+						<img class="side-feature" id="cnje" src="img/cnje_white.png" alt="">
+					</div>
+				</div>
+
+			</div>
+			<!-- /Content wrapper -->
+		</div>
+		<!-- /Container -->
+	</section>
+	<!-- /Side Features section -->
+
+	<!-- ICO section -->
+	<section class="section is-medium is-end" id="workflow">
+		<!-- Container -->
+		<div class="container">
+			<!-- Divider -->
+			<div class="divider is-centered"></div>
+			<!-- Title & subtitle -->
+			<h2 class="title is-light is-semibold has-text-centered is-spaced">Déroulement d'une étude</h2>
+
+			<!-- Content wrapper -->
+			<div class="content-wrapper is-large">
+
+				<!-- Flying tabs wrapper -->
+				<div class="flying-wrapper">
+					<!-- Tabs container -->
+					<div class="flying-tabs-container">
+						<!-- Tabs -->
+						<div class="flying-tabs">
+							<div class="flying-child tab-1 is-active" data-tab="tab-1"><a href="javascript:void(0);">1. DEVIS</a></div>
+							<div class="flying-child tab-2" data-tab="tab-2"><a href="javascript:void(0);">2. LANCEMENT</a></div>
+							<div class="flying-child tab-3" data-tab="tab-3"><a href="javascript:void(0);">3. RENDU DU PROJET</a></div>
+							<div class="flying-child tab-4" data-tab="tab-4"><a href="javascript:void(0);">4. MAINTENANCE</a></div>
+							<div class="slider"></div>
+						</div>
+					</div>
+
+					<!-- Tabs content wrapper -->
+					<div class="flying-tabs-content">
+						<!-- Tab 1 -->
+						<div id="tab-1" class="tab-content is-active">
+							<div class="columns is-vcentered tab-content-wrapper">
+								<!-- ICO Terms -->
+								<div class="column is-5 is-offset-1">
+									<div class="text-content">
+										<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">ELABORATION D'UN DEVIS</h4>
+										<span class="subtitle is-light">Nous appréhendons vos problématiques et vous exposons nos solutions, le budget prévisionnel et le temps nécessaire à la réalisation de votre projet.</span>
+									</div>
+								</div>
+								<div class="column is-5">
+									<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/roadmap-end.svg" alt="">
+								</div>
+
+							</div>
+						</div>
+
+
+						<!-- Tab 2 -->
+						<div id="tab-2" class="tab-content">
+							<div class="columns is-vcentered tab-content-wrapper">
+								<!-- Tab content -->
+								<div class="column is-5 is-offset-1">
+									<div class="text-content">
+										<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">PHASE DE DÉVELOPPEMENT</h4>
+										<span class="is-light subtitle">Nous commençons alors l'étude approfondie des solutions que nous proposons et le développement technique du projet afin de répondre le mieux possible à vos attentes.</span>
+									</div>
+								</div>
+								<!-- Tab image -->
+								<div class="column is-5">
+									<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/media.svg" alt="">
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Tab 3 -->
+						<div id="tab-3" class="tab-content">
+							<div class="columns is-vcentered tab-content-wrapper">
+								<!-- Tab content -->
+								<div class="column is-5 is-offset-1">
+									<div class="text-content">
+										<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">RENDU DU PROJET</h4>
+										<span class="subtitle is-light">Nous rendons le projet terminé dans les délais et les conditions prévus dès le devis et nous assurons son installation ainsi que le suivi de son fonctionnement.</span>
+									</div>
+								</div>
+								<!-- Tab image -->
+								<div class="column is-5">
+									<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/bounty.svg" alt="">
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Tab 4 -->
+						<div id="tab-4" class="tab-content">
+							<div class="columns is-vcentered tab-content-wrapper">
+								<!-- Tab content -->
+								<div class="column is-5 is-offset-1">
+									<div class="text-content">
+										<h4 class="title is-6 is-light animated preFadeInUp fadeInUp">MAINTENANCE ET SUIVI</h4>
+										<span class="subtitle is-light">Une fois le projet remis, nous assurons une maintenance de nos produits livrés.</span>
+									</div>
+								</div>
+								<!-- Tab image -->
+								<div class="column is-5">
+									<img class="animated preFadeInUp fadeInUp" src="assets/img/illustrations/crypto-mining.svg" alt="">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<!-- Content wrapper -->
+		</div>
+		<!-- /Container -->
+	</section>
+	<!-- /ICO section -->
+
+	<!-- Roadmap section -->
+	<section class="section is-medium is-dark" id="sample">
+		<!-- Container -->
+		<div class="container">
+			<!-- Content wrapper -->
+			<div class="content-wrapper">
+
+				<div class="container">
+					<!-- Divider -->
+					<div class="divider is-centered"></div>
+					<!-- Title & subtitle -->
+					<h2 class="title is-light is-semibold has-text-centered is-spaced">Un exemple de nos compétences</h2>
 					<!-- Content wrapper -->
 					<div class="content-wrapper is-large">
-						<div class="columns is-vcentered is-multiline">
+						<div class="columns is-vcentered">
 
-							<!-- Advisor -->
-							<div class="column is-one-fifth">
-								<div class="advisor-container has-text-centered">
-									<!-- Picture -->
-									<div class="photo">
-										<img src="https://arveto.io/images/Olivier_Benaben.jpg" alt="" data-aos="fade-down" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									</div>
-									<!-- Meta -->
-									<div class="info">
-										<div class="subtitle is-6 is-light is-compressed">Olivier Benaben</div>
-										<div class="position">Fondateur & Vice-président</div>
+							<!-- Feature content -->
+							<div class="column is-5 is-offset-1">
+								<div class="side-feature-content">
+
+									<h3 class="title is-4 is-light"><img src="assets/img/icons/ico/bitbanner.svg" alt=""> <span>Application démo</span></h3>
+									<div class="divider is-long"></div>
+									<p class="is-light">Nous réalisons des applications hybrides ou natives suivant les attentes du projet.</p>
+									<div class="cta-wrapper">
+										<a href="mailto:www.arveto.softwares@gmail.com" class="button k-button k-primary raised has-gradient is-bold">
+											<span class="text">Nous contacter</span>
+											<span class="front-gradient"></span>
+										</a>
 									</div>
 								</div>
 							</div>
 
-							<!-- Advisor -->
-							<div class="column is-one-fifth">
-								<div class="advisor-container has-text-centered">
-									<div class="photo">
-										<img src="https://arveto.io/images/Aurelien_Delval.jpg" alt="" data-aos="fade-down" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									</div>
-									<div class="info">
-										<div class="subtitle is-6 is-light is-compressed">Aurélien Delval</div>
-										<div class="position">Fondateur & Président</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Advisor -->
-							<div class="column is-one-fifth">
-								<div class="advisor-container has-text-centered">
-									<div class="photo">
-										<img src="https://arveto.io/images/Hugo_Henrotte.jpg" alt="" data-aos="fade-down" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									</div>
-									<div class="info">
-										<div class="subtitle is-6 is-light is-compressed">Hugo Henrotte</div>
-										<div class="position">Fondateur & Trésorier</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Advisor -->
-							<div class="column is-one-fifth">
-								<div class="advisor-container has-text-centered">
-									<div class="photo">
-										<img src="https://arveto.io/images/Guillaume_Montfort.jpg" alt="" data-aos="fade-down" data-aos-delay="700" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									</div>
-									<div class="info">
-										<div class="subtitle is-6 is-light is-compressed">Guillaume Montfort</div>
-										<div class="position">Fondateur & Secrétaire</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Advisor -->
-							<div class="column is-one-fifth">
-								<div class="advisor-container has-text-centered">
-									<div class="photo">
-										<img src="assets/img/team/a3.jpg" alt="" data-aos="fade-down" data-aos-delay="900" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									</div>
-									<div class="info">
-										<div class="subtitle is-6 is-light is-compressed">Maxime Vincent</div>
-										<div class="position">Membre actif</div>
-									</div>
-								</div>
+							<!-- Feature image -->
+							<div class="column is-7">
+								<img class="side-feature" src="assets/img/illustrations/blockchain-blocks.svg" alt="">
 							</div>
 						</div>
 					</div>
 					<!-- /Content wrapper -->
-
-
-					<!-- Spaced divider -->
-					<div class="divider is-centered is-spacer"></div>
-					<!-- Title & subtitle -->
-					<h2 class="title is-light is-semibold has-text-centered is-spaced" id="blog">Blog</h2>
-					<h4 class="subtitle is-6 is-light has-text-centered is-compact">
-						[WORK IN PROGRESS] <br> Come back later !
-					</h4>
-
+				</div>
 
 			</div>
-		</section>
-		<!-- /Company section -->
+		</div>
+		<!-- /Container -->
+	</section>
+	<!-- /Roadmap section -->
 
-		<!-- Contact section -->
-		<section class="section is-medium is-darkest" name="anchor" id="contact">
-			<!-- Container -->
-			<div class="container">
-				<!-- Divider -->
-				<div class="divider is-centered"></div>
-				<!-- Title & subtitle -->
-				<h2 class="title is-light is-semibold has-text-centered is-spaced">Contactez nous</h2>
 
-				<!-- Content wrapper -->
-				<div class="content-wrapper is-large">
-					<div class="columns">
-						<div class="column is-8 is-offset-2">
-							<!-- Contact icons -->
-							<div class="contact-icons">
-								<!-- Phone -->
-								<a href="tel:+33651557288" class="contact-icon" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									<img class="is-phone" src="assets/img/icons/phone.svg" alt="">
-								</a>
-								<!-- Mail -->
-								<a href="mailto:arveto.softwares@gs?subject=Business contact" class="contact-icon" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									<img class="is-phone" src="assets/img/icons/mail.svg" alt="">
-								</a>
-								<!-- Telegram -->
-								<a href="https://t.me/PurplePachyderm" class="contact-icon" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
-									<img class="is-telegram" src="assets/img/logo/telegram.svg" alt="">
-								</a>
+
+	<!-- Company section -->
+	<section class="section is-medium has-big-dark-gradient" id="team">
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Spaced divider -->
+			<div class="divider is-centered is-spacer"></div>
+			<!-- Title & subtitle -->
+			<h2 class="title is-light is-semibold has-text-centered is-spaced">Notre équipe</h2>
+			<h4 class="subtitle is-6 is-light has-text-centered is-compact">Récompensée par Altran et Smile lors du dernier hackathon de la Nuit de l'Info, l'équipe d'Arveto Ink. est composée d'étudiants de l'ISTY. Voici les membres de son bureau :</h4>
+
+			<!-- Content wrapper -->
+			<div class="content-wrapper is-large">
+				<div class="columns is-vcentered is-multiline">
+
+
+					<!-- President -->
+					<div class="column is-one-fifth">
+						<div class="advisor-container has-text-centered">
+							<div class="photo">
+								<img src="img/Aurelien_Delval.jpg" alt="" data-aos="fade-down" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
+							</div>
+							<div class="info">
+								<div class="subtitle is-6 is-light is-compressed">Aurélien Delval</div>
+								<div class="position">Fondateur & Président</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Vice-President -->
+					<div class="column is-one-fifth">
+						<div class="advisor-container has-text-centered">
+							<!-- Picture -->
+							<div class="photo">
+								<img src="img/Olivier_Benaben.jpg" alt="" data-aos="fade-down" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
+							</div>
+							<!-- Meta -->
+							<div class="info">
+								<div class="subtitle is-6 is-light is-compressed">Olivier Benaben</div>
+								<div class="position">Fondateur & Vice-président</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Treasurer -->
+					<div class="column is-one-fifth">
+						<div class="advisor-container has-text-centered">
+							<div class="photo">
+								<img src="img/Hugo_Henrotte.jpg" alt="" data-aos="fade-down" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
+							</div>
+							<div class="info">
+								<div class="subtitle is-6 is-light is-compressed">Hugo Henrotte</div>
+								<div class="position">Fondateur & Trésorier</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Secretary -->
+					<div class="column is-one-fifth">
+						<div class="advisor-container has-text-centered">
+							<div class="photo">
+								<img src="img/Guillaume_Montfort.jpg" alt="" data-aos="fade-down" data-aos-delay="700" data-aos-offset="200" data-aos-easing="ease-out-quart">
+							</div>
+							<div class="info">
+								<div class="subtitle is-6 is-light is-compressed">Guillaume Montfort</div>
+								<div class="position">Fondateur & Secrétaire</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Active Member -->
+					<div class="column is-one-fifth">
+						<div class="advisor-container has-text-centered">
+							<div class="photo">
+								<img src="img/Maxime_Vincent.jpg" alt="" data-aos="fade-down" data-aos-delay="900" data-aos-offset="200" data-aos-easing="ease-out-quart">
+							</div>
+							<div class="info">
+								<div class="subtitle is-6 is-light is-compressed">Maxime Vincent</div>
+								<div class="position">Membre actif</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Content wrapper -->
 			</div>
-			<!-- Container -->
-		</section>
-		<!-- Contact section -->
-	</div>
+			<!-- /Content wrapper -->
 
-	<footer class="krypton-footer">
+
+			<!-- BLOG -->
+			<div class="divider is-centered is-spacer" id="blog"></div>
+			<!-- Title & subtitle -->
+			<h2 class="title is-light is-semibold has-text-centered is-spaced">Blog</h2>
+			<h2 class="subtitle is-8 is-light has-text-centered">
+				[WORK IN PROGRESS] <br> Revenez plus tard !
+			</h2>
+
+
+		</div>
+	</section>
+	<!-- /Company section -->
+
+	<!-- Contact section -->
+	<section class="section is-medium is-darkest" name="anchor" id="contact">
+		<!-- Container -->
 		<div class="container">
-			<!-- Logo -->
-			<div class="footer-logo">
-				<a href="#">
-					<img class="rotating" src="assets/img/logo/krypton-gradient.svg" alt="">
-					<div class="brand-name">ARVETO INK.</div>
-					<div class="brand-subtitle">We write software.</div>
-				</a>
-			</div>
+			<!-- Divider -->
+			<div class="divider is-centered"></div>
+			<!-- Title & subtitle -->
+			<h2 class="title is-light is-semibold has-text-centered is-spaced">Contactez nous</h2>
 
-			<!-- Columns -->
-			<div class="columns footer-columns is-vcentered">
-				<div class="column is-4">
-					<!-- Links group -->
-					<ul class="footer-links">
-						<li>
-							<a href="#home" onclick="document.getElementById('home').scrollIntoView()">Top</a>
-						</li>
-
-						<li>
-							<a href="#competencies" onclick="document.getElementById('competencies').scrollIntoView()">Compétences</a>
-						</li>
-
-						<li>
-							<a href="#whoami" onclick="document.getElementById('whoami').scrollIntoView()">A propos</a>
-						</li>
-					</ul>
-				</div>
-				<!-- Newsletter -->
-				<div class="column is-4">
-					<div class="subscribe-block">
-						<form>
-							<!-- Field -->
-							<div class="control">
-								<!-- Special input -->
-								<input class="krypton-subscribe-input" type="email" name="email" placeholder="">
-								<button class="subscribe-button">
-									<span>Newsletter</span>
-								</button>
-							</div>
-						</form>
+			<!-- Content wrapper -->
+			<div class="content-wrapper is-large">
+				<div class="columns">
+					<div class="column is-8 is-offset-2">
+						<!-- Contact icons -->
+						<div class="contact-icons">
+							<!-- Phone -->
+							<a href="tel:+33651557288" class="contact-icon" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
+								<img class="is-phone" src="assets/img/icons/phone.svg" alt="">
+							</a>
+							<!-- Mail -->
+							<a href="mailto:arveto.softwares@gs?subject=Business contact" class="contact-icon" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
+								<img class="is-phone" src="assets/img/icons/mail.svg" alt="">
+							</a>
+							<!-- Telegram -->
+							<a href="https://t.me/PurplePachyderm" class="contact-icon" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
+								<img class="is-telegram" src="assets/img/logo/telegram.svg" alt="">
+							</a>
+						</div>
 					</div>
 				</div>
-				<!-- Links group -->
-				<div class="column is-4">
-					<ul class="footer-links">
-						<li>
-							<a href="#sample" onclick="document.getElementById('sample').scrollIntoView()">Démo</a>
-						</li>
-
-						<li>
-							<a href="#team" onclick="document.getElementById('team').scrollIntoView()">L'équipe</a>
-						</li>
-
-						<li>
-							<a href="#blog"onclick="document.getElementById('blog').scrollIntoView()">Blog</a>
-						</li>
-					</ul>
-				</div>
 			</div>
-			<!-- Copyright -->
-			<p class="k-copyright">© 2020 | Arveto Ink. All Rights Reserved</p>
-			<br>
-			<!-- Made by -->
-			<p class="coded-by">Made by <a href="https://arveto.io" target="_blank"> Arveto Ink.</a>
-			</p>
-			<div class="columns is-light is-thin" style="padding-top: 50px;">
-				<div class="column k-copyright has-text-white">
-					10 rue Paul Dautier, appt. 206 <br>
-					Vélizy-Villacoublay, 78140 France <br>
-					arveto@isty.uvsq.fr
-				</div>
-				<div class="column k-copyright has-text-white">Arveto Ink. est une association loi 1901 parue au Journal Officiel et bénéficiant du label Junior Création</div>
-				<div class="column"></div>
-			</div>
+			<!-- Content wrapper -->
+		</div>
+		<!-- Container -->
+	</section>
+	<!-- Contact section -->
+</div>
+
+<footer class="krypton-footer">
+	<div class="container">
+		<!-- Logo -->
+		<div class="footer-logo">
+			<a href="#">
+				<img class="rotating" src="assets/img/logo/krypton-gradient.svg" alt="">
+				<div class="brand-name">ARVETO INK.</div>
+				<div class="brand-subtitle">We write software.</div>
+			</a>
 		</div>
 
-		<!-- Absolute image -->
-		<img class="solar-system" src="assets/img/bg/solar.svg" alt="">
-	</footer> <!-- Core js -->
-	<script src="assets/js/app.js"></script>
-	<!--script src="assets/js/particlesjs/particles.min.js"></script-->
-	<!--<script src="assets/js/aos/aos.js"></script>-->
+		<!-- Columns -->
+		<div class="columns footer-columns is-vcentered">
+			<div class="column is-4">
+				<!-- Links group -->
+				<ul class="footer-links">
+					<li>
+						<a href="#home" onclick="document.getElementById('home').scrollIntoView()">Top</a>
+					</li>
 
-	<script src="assets/js/functions.js"></script>
-	<script src="assets/js/timer.js"></script>
-	<script src="assets/js/timeline.js"></script>
-	<script src="assets/js/roadmap.js"></script>
-	<script src="assets/js/main.js" defer="defer"></script>
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+					<li>
+						<a href="#skills" onclick="document.getElementById('skills').scrollIntoView()">Compétences</a>
+					</li>
+
+					<li>
+						<a href="#whoami" onclick="document.getElementById('whoami').scrollIntoView()">A propos</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Newsletter -->
+			<div class="column is-4">
+				<div class="subscribe-block">
+					<form>
+						<!-- Field -->
+						<div class="control">
+							<!-- Special input -->
+							<input class="krypton-subscribe-input" type="email" name="email" placeholder="">
+							<button class="subscribe-button">
+								<span>Newsletter</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Links group -->
+			<div class="column is-4">
+				<ul class="footer-links">
+					<li>
+						<a href="#sample" onclick="document.getElementById('sample').scrollIntoView()">Démo</a>
+					</li>
+
+					<li>
+						<a href="#team" onclick="document.getElementById('team').scrollIntoView()">L'équipe</a>
+					</li>
+
+					<li>
+						<a href="#blog"onclick="document.getElementById('blog').scrollIntoView()">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Copyright -->
+		<p class="k-copyright">© 2020 | Arveto Ink. All Rights Reserved</p>
+		<br>
+		<!-- Made by -->
+		<p class="coded-by">Made by <a href="https://arveto.io" target="_blank"> Arveto Ink.</a>
+		</p>
+		<div class="columns is-light is-thin" style="padding-top: 50px;">
+			<div class="column k-copyright has-text-white">
+				10 rue Paul Dautier, appt. 206 <br>
+				Vélizy-Villacoublay, 78140 France <br>
+				arveto@isty.uvsq.fr
+			</div>
+			<div class="column k-copyright has-text-white">Arveto Ink. est une association loi 1901 parue au Journal Officiel et bénéficiant du label Junior Création</div>
+			<div class="column"></div>
+		</div>
+	</div>
+
+	<!-- Absolute image -->
+	<img class="solar-system" src="assets/img/bg/solar.svg" alt="">
+</footer> <!-- Core js -->
+<script src="assets/js/app.js"></script>
+
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/timer.js"></script>
+<script src="assets/js/timeline.js"></script>
+<script src="assets/js/roadmap.js"></script>
+<script src="assets/js/main.js" defer="defer"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/language.js"></script>
+
 </body>
 
 </html>

@@ -12,13 +12,9 @@ let options = {
 
 
 app.use(function(req, res, next) {
-
-    res.header("Access-Control-Allow-Origin", "*");
-
-      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-
-        next();
-
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	next();
 });
 
 
@@ -27,11 +23,11 @@ app.use(function(req, res, next) {
 app.use(require('express').static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+	res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/app', (req, res) => {
-    res.sendFile(__dirname + '/public/app.html');
+	res.sendFile(__dirname + '/public/app.html');
 });
 
 https.createServer(options, app).listen(443);
@@ -40,4 +36,3 @@ http.createServer(function (req, res) {
 	res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
 	res.end();
 }).listen(80);
-
